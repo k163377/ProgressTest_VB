@@ -11,7 +11,7 @@
     End Sub
 
     Sub doSomething(ByVal iProg As IProgress(Of Integer))
-        For ProgressCount As Integer = 0 To 99
+        For ProgressCount As Integer = 1 To 100
             Threading.Thread.Sleep(100)
             iProg.Report(ProgressCount)
         Next
